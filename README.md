@@ -1,6 +1,6 @@
 # Smart Campus Databases Benchmark
 
-A comprehensive benchmarking framework for evaluating six database systems on time-series IoT data from a smart campus WiFi scenario. The benchmark measures both ingestion throughput and query performance across 20 diverse queries, covering simple lookups, aggregations, percentiles, and advanced time-series analytics.
+A benchmarking framework for evaluating six database systems on time-series data from a smart campus WiFi scenario. The benchmark measures both ingestion throughput and query performance across 20 diverse queries, covering simple lookups, aggregations, percentiles, and other advanced time-series analytics.
 
 ## Databases Under Test
 
