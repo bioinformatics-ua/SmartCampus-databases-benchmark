@@ -68,7 +68,7 @@ Averaged over 5 runs on ~58M records of WiFi connectivity data:
 
 ### 1. Prepare the data
 
-Place the input data files in `data/readings/` (27 JSON files named `readings_1.json` through `readings_27.json`).
+Place the input data files in `data/readings/` (29 JSON files named `readings_0.json` through `readings_28.json`).
 
 ### 2. Run the full benchmark suite
 
