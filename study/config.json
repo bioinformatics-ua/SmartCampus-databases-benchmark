@@ -1,0 +1,71 @@
+{
+  "protocol": "campus-v2-1",
+  "engines": [
+    "postgres",
+    "timescaledb",
+    "clickhouse",
+    "questdb",
+    "cratedb",
+    "influxdb"
+  ],
+  "primary_engines": [
+    "postgres",
+    "timescaledb",
+    "clickhouse",
+    "questdb"
+  ],
+  "images": {
+    "postgres": "postgres:17.9",
+    "timescaledb": "timescale/timescaledb:2.26.2-pg17",
+    "clickhouse": "clickhouse/clickhouse-server:26.3.5.12",
+    "questdb": "questdb/questdb:8.3.3",
+    "cratedb": "crate:6.2.4",
+    "influxdb": "influxdb:2.7.12"
+  },
+  "db_cpus": 12,
+  "db_memory_gib": 48,
+  "min_free_gib": 50,
+  "levels": [
+    "S",
+    "B",
+    "L"
+  ],
+  "distributions": [
+    "base",
+    "hotspot",
+    "fragmented"
+  ],
+  "static_repetitions": 5,
+  "mixed_repetitions": 3,
+  "patterns": [
+    "dashboard",
+    "balanced",
+    "report_heavy",
+    "alert_heavy",
+    "burst"
+  ],
+  "read_rates": [
+    1,
+    10,
+    50
+  ],
+  "write_rates": [
+    500,
+    5000
+  ],
+  "warmup_seconds": 120,
+  "measurement_seconds": 600,
+  "query_timeout_seconds": 300,
+  "load_timeout_seconds": 14400,
+  "visibility_timeout_seconds": 300,
+  "read_workers": 64,
+  "read_queue": 1000,
+  "write_queue_seconds": 30,
+  "batch_rows": 10000,
+  "monitor_interval_seconds": 5,
+  "freshness_poll_seconds": 1,
+  "freshness_timeout_seconds": 30,
+  "seed": 1962026,
+  "study_budget_days": 35,
+  "source_archive_sha256": "68e7a1a0a75bb71a45f438b949386f4dcad2b8944bc63ab881e8348e30e82a52"
+}
